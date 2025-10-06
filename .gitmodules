@@ -30,3 +30,7 @@
 	path = techpack/camera-legacy-m
 	url = https://github.com/Mi-Thorium/kernel_techpack_camera-legacy
 	branch = camera/LA.UM.5.3-10610-89xx.0/4.19/mithorium
+[submodule "drivers/staging/prima"]
+	path = drivers/staging/prima
+	url = https://github.com/Mi-Thorium/vendor_qcom_opensource_wlan_prima
+	branch = wlan/LA.UM.9.6.4/mithorium/master
