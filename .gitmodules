@@ -6,3 +6,7 @@
 	path = arch/arm64/boot/dts/xiaomi-msm8937
 	url = https://github.com/Mi-Thorium/kernel_devicetree_xiaomi-msm8937.git
 	branch = dts/mi8937/4.19/master
+[submodule "arch/arm64/boot/dts/xiaomi-sdm439"]
+	path = arch/arm64/boot/dts/xiaomi-sdm439
+	url = https://github.com/Mi-Thorium/kernel_devicetree_xiaomi-sdm439.git
+	branch = dts/mi439/4.19/master
