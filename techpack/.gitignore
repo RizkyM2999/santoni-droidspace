@@ -2,7 +2,6 @@
 # ignore all subdirs except stub
 !/stub/
 # Xiaomi MSM8937
-/audio-legacy
 /camera-legacy*
 # Mods
 /KernelSU

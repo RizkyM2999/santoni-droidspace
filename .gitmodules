@@ -18,3 +18,7 @@
 	path = techpack/xiaomi-sdm439
 	url = https://github.com/Mi-Thorium/kernel_techpack_xiaomi-sdm439.git
 	branch = techpack/sdm439/4.19/master
+[submodule "techpack/audio-legacy"]
+	path = techpack/audio-legacy
+	url = https://github.com/Mi-Thorium/kernel_techpack_audio-legacy
+	branch = audio/4.19/mithorium/master
