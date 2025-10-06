@@ -22,3 +22,11 @@
 	path = techpack/audio-legacy
 	url = https://github.com/Mi-Thorium/kernel_techpack_audio-legacy
 	branch = audio/4.19/mithorium/master
+[submodule "techpack/camera-legacy"]
+	path = techpack/camera-legacy
+	url = https://github.com/Mi-Thorium/kernel_techpack_camera-legacy
+	branch = camera/LA.UM.8.6.r1-05300-89xx.0/4.19/mithorium
+[submodule "techpack/camera-legacy-m"]
+	path = techpack/camera-legacy-m
+	url = https://github.com/Mi-Thorium/kernel_techpack_camera-legacy
+	branch = camera/LA.UM.5.3-10610-89xx.0/4.19/mithorium
