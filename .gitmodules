@@ -1,0 +1,4 @@
+[submodule "arch/arm64/boot/dts/vendor-legacy"]
+	path = arch/arm64/boot/dts/vendor-legacy
+	url = https://github.com/Mi-Thorium/kernel_devicetree_msm-4.19.git
+	branch = dts/master
