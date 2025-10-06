@@ -2,3 +2,7 @@
 	path = arch/arm64/boot/dts/vendor-legacy
 	url = https://github.com/Mi-Thorium/kernel_devicetree_msm-4.19.git
 	branch = dts/master
+[submodule "arch/arm64/boot/dts/xiaomi-msm8937"]
+	path = arch/arm64/boot/dts/xiaomi-msm8937
+	url = https://github.com/Mi-Thorium/kernel_devicetree_xiaomi-msm8937.git
+	branch = dts/mi8937/4.19/master
