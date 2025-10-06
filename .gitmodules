@@ -14,3 +14,7 @@
 	path = techpack/xiaomi-msm8937
 	url = https://github.com/Mi-Thorium/kernel_techpack_xiaomi-msm8937.git
 	branch = techpack/mi8937/4.19/master
+[submodule "techpack/xiaomi-sdm439"]
+	path = techpack/xiaomi-sdm439
+	url = https://github.com/Mi-Thorium/kernel_techpack_xiaomi-sdm439.git
+	branch = techpack/sdm439/4.19/master

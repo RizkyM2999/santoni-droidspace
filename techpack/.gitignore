@@ -4,6 +4,5 @@
 # Xiaomi MSM8937
 /audio-legacy
 /camera-legacy*
-/xiaomi-sdm439
 # Mods
 /KernelSU
