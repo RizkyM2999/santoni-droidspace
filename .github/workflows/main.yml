@@ -12,6 +12,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         ref: ksu # Memastikan GitHub Actions mengambil kode dari branch ksu
+        submodules: recursive
 
     - name: Install Build Dependencies
       run: |
