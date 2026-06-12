@@ -22,8 +22,8 @@ jobs:
       run: |
         mkdir -p $GITHUB_WORKSPACE/clang
         cd $GITHUB_WORKSPACE/clang
-        # Mengunduh Android Clang r450784d yang stabil untuk kernel 4.19
-        wget -q https://googlesource.com
+        # Menggunakan link arsip spesifik master-kernel-build agar terunduh sempurna
+        wget -q https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master-kernel-build-2022/clang-r450784d.tar.gz
         tar -xf clang-r450784d.tar.gz
         rm -rf clang-r450784d.tar.gz
 
