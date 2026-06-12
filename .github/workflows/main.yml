@@ -20,27 +20,22 @@ jobs:
 
     - name: Download AOSP Clang Toolchain
       run: |
-        mkdir -p $GITHUB_WORKSPACE/clang
-        cd $GITHUB_WORKSPACE/clang
-        # Menggunakan link arsip spesifik master-kernel-build agar terunduh sempurna
-        wget -q https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master-kernel-build-2022/clang-r450784d.tar.gz
-        tar -xf clang-r450784d.tar.gz
-        rm -rf clang-r450784d.tar.gz
+        # Mengunduh Clang r450784d langsung menggunakan Git Clone (Lebih stabil & anti-eror)
+        git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 --depth=1 -b android13-release $GITHUB_WORKSPACE/clang
 
     - name: Run Kernel Build
       run: |
-        export PATH="$GITHUB_WORKSPACE/clang/bin:$PATH"
+        # Mengarahkan path langsung ke folder biner Clang r450784d hasil clone
+        export PATH="$GITHUB_WORKSPACE/clang/clang-r450784d/bin:$PATH"
         export ARCH=arm64
         export SUBARCH=arm64
         export CROSS_COMPILE=aarch64-linux-gnu-
         export CROSS_COMPILE_ARM32=arm-linux-gnueabi-
         export CC=clang
         
-        # 1. Membuat konfigurasi awal dari file yang telah Anda edit
         make O=out vendor/msm8937-perf_defconfig
-        
-        # 2. Mulai proses kompilasi kernel utama
         make -j$(nproc --all) O=out
+
 
     - name: Upload Kernel Binary
       uses: actions/upload-artifact@v4
